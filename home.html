@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Bus Routing System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Bus Routing System</h1>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <h2>Welcome, <span id="username"></span></h2>
+            <p>Your current location: <span id="location"></span></p>
+            <a href="change-location.html" class="button">Change Location</a>
+            <a href="welcome.html" class="button logout-button">Logout</a>
+        </div>
+    </main>
+    <script>
+        document.getElementById('username').innerText = new URLSearchParams(window.location.search).get('username') || 'Guest';
+        document.getElementById('location').innerText = localStorage.getItem('location') || 'Not set';
+    </script>
+</body>
+</html>
