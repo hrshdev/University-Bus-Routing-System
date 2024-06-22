@@ -91,50 +91,43 @@ Implementing a University Bus Routing and Scheduling System at the University of
 ## Setup Requirements and Instructions
 
 ### Prerequisites
-- A web server (e.g., Apache, Nginx)
-- HTML, CSS, JavaScript
-- Any server-side scripting language (e.g., PHP, Node.js)
+- XAMPP installed on your machine.
+- Basic knowledge of using XAMPP and web servers.
 
 ### Installation
 
 1. **Clone the repository**
     ```sh
-    git clone https://github.com/username/university-bus-routing.git
+    git clone https://github.com/hrshdeve/university-bus-routing.git
     cd university-bus-routing
     ```
 
-2. **Set up your web server**
-    - Place the project files in the web server's root directory.
-    - Ensure your web server is configured to serve the HTML files.
+2. **Move project files to XAMPP's web server directory**
+    - Open your XAMPP installation directory (e.g., `C:\xampp` on Windows or `/Applications/XAMPP` on macOS).
+    - Navigate to the `htdocs` directory inside XAMPP (`C:\xampp\htdocs` on Windows or `/Applications/XAMPP/htdocs` on macOS).
+    - Copy or move the `university-bus-routing` directory into `htdocs`.
 
-3. **Configure your server-side scripting**
-    - If using PHP, ensure PHP is installed and configured on your server.
-    - For other scripting languages, follow the respective setup instructions.
+3. **Start Apache server in XAMPP**
+    - Open XAMPP Control Panel.
+    - Start Apache by clicking the "Start" button next to Apache in the control panel. This will start the Apache web server.
 
-### Running the Application
-1. **Start your web server**
-    - Ensure your web server is running.
-    - For Apache, you might use:
-      ```sh
-      sudo systemctl start apache2
-      ```
-    - For Nginx, you might use:
-      ```sh
-      sudo systemctl start nginx
-      ```
-
-2. **Access the application**
-    - Open a web browser and go to `http://localhost` or your server's IP address.
+4. **Access the application**
+    - Open a web browser.
+    - Go to `http://localhost/university-bus-routing`. This URL assumes that `university-bus-routing` is the name of the directory you copied into `htdocs`.
 
 ### Configuration
-- **Server Configuration**: Adjust your web server settings as needed in the configuration files (e.g., `httpd.conf` for Apache, `nginx.conf` for Nginx).
-- **Environment Variables**: Use environment variables for any sensitive information.
+
+- **Server Configuration**: XAMPP's Apache server configuration is typically done through `httpd.conf` located in `C:\xampp\apache\conf` on Windows or `/Applications/XAMPP/xamppfiles/apache2/conf` on macOS.
+- **Environment Variables**: If your application requires any environment variables (like database credentials or API keys), you may set them in your `php.ini` or use `.env` files if your application supports it.
 
 ### Deployment
-Refer to the deployment documentation specific to your server environment (e.g., shared hosting, VPS).
+
+- For local development and testing, XAMPP provides an easy environment to run PHP applications like this one. Ensure all dependencies are met and configurations are correctly set up.
 
 ### Testing
-Ensure all pages are loading correctly and links are functioning as expected.
+
+- Open your web browser and visit `http://localhost/university-bus-routing` to test the application.
+- Verify that all pages load correctly and functionality (such as links and forms) works as expected.
 
 ---
 
