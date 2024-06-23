@@ -1,0 +1,162 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    min-height: 70px;
+    border-bottom: #77aaff 3px solid;
+    text-align: center;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header ul {
+    padding: 0;
+    list-style: none;
+}
+
+header ul li {
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header .logo {
+    float: left;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+main .container {
+    padding: 40px;
+    color: Black;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.register-form, .login-form {
+    text-align: left;
+}
+
+.register-form h2, .login-form h2 {
+    text-align: center;
+    margin-bottom: 20px; 
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input, 
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px; 
+}
+
+.button {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #77aaff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: #0066ff;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #77aaff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.back-button {
+    background-color: #ccc;
+    color: #333;
+    margin-top: 15px;
+}
+
+.back-button:hover {
+    background-color: #999;
+}
+
+main .container p {
+    margin-top: 20px;
+    margin-bottom: 30px; 
+}
+
+main .container h2 {
+    margin-bottom: 20px; 
+}
+
+.logout-button {
+    background-color: #ff4c4c;
+}
+
+.logout-button:hover {
+    background-color: #ff0000;
+}
+
+/* Error message styling */
+.message.error {
+    color: red;
+    text-align: center;
+    margin-bottom: 20px;
+}
